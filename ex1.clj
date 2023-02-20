@@ -69,3 +69,6 @@
   3 "dunno"))
 
 (println (cond (= x 3) "hello" (= y 5) "world")) ; evaluate the expr, if true, then returns
+
+(defn say-name [n] (println "Hi " n))
+(say-name "Helder")
