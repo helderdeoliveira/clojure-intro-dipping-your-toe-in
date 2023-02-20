@@ -72,3 +72,5 @@
 
 (defn say-name [n] (println "Hi " n))
 (say-name "Helder")
+
+(println (macroexpand '(defn say-hello [n] n)))
