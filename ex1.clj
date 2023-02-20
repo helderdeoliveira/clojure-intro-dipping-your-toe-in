@@ -24,3 +24,13 @@
 (println (class #"hello*"))
 (println (class :hello))
 (println (class 'x))
+
+(println (+ 1 1))
+(println (+ 1 1 1 1 1 1 ))
+(println (* 2 4))
+(println (= 1 1.0))
+(println (== 1 1.0))
+(println (= [1 2 3 4] [1 2 3 4]))
+(println '(1 2 3 4))
+(println '(+ 1 2))
+(println (eval '(+ 1 2)))
