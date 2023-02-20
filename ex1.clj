@@ -39,3 +39,22 @@
 
 (println (try (throw (Exception. "hello exception!")) (catch Exception e (.getMessage e))))
 
+(def x '(1 2 3 4 5))
+(println (class x))
+(println (first x))
+(println (last x))
+(println (nth x 2))
+(println (rest x))
+(println (pop x))
+(println (peek x))
+
+(def y [1 2 3 4 6])
+(println (class y))
+(println (nth y 2))
+
+(println (doc conj))
+(println (conj x 6))
+(println (conj y 6))
+
+(def t1 [1 "hello"])
+(apply println t1)
