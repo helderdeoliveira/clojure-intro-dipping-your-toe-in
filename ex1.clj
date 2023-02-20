@@ -58,3 +58,14 @@
 
 (def t1 [1 "hello"])
 (apply println t1)
+
+(println (if (= 1 1) "hello" "world"))
+(println (if (= 1 2) "hello" "world"))
+
+(def x 3)
+(println (case x
+  1 "hello"
+  2 "world"
+  3 "dunno"))
+
+(println (cond (= x 3) "hello" (= y 5) "world")) ; evaluate the expr, if true, then returns
