@@ -36,3 +36,6 @@
 (println (eval '(+ 1 2)))
 
 (.println System/out "hello world")
+
+(println (try (throw (Exception. "hello exception!")) (catch Exception e (.getMessage e))))
+
